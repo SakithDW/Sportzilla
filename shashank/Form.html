@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="Form.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <form action="info">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">Billing Address</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input id="name" type="text" placeholder="Bruce Wayne">
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" id ="email" placeholder="batman@example.com">
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="1/2/3, Victoria residents, Gotham city">
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" placeholder="Gotham city">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" placeholder="Sri Lanka">
+                    </div>
+                    <div class="inputBox">
+                        <span>zip code :</span>
+                        <input type="text" placeholder="123 456">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">Payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="Images/card1.png" alt="Cardpic">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="Bruce Wayne">
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input id="cc" type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="text" placeholder="October">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Expiring year :</span>
+                        <input type="number" placeholder="2022">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="1234">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+
+        <button class="btn" onclick="validateForm()">proceed to checkout</button>
+        <script>
+            function validateForm() {
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var cc = document.getElementById("cc").value;
+                var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            
+                if (name == "" || email == "" || cc == "") {
+                    alert("Please fill all the fields");
+                    return false;
+                }
+            
+                if (email.match(validRegex)) {
+                    alert("Purchase Successfully");
+                    return true;
+                } else {
+                    alert("Invalid email address!");
+                    return false;
+                }
+            }
+        </script>
+
+    </form>
+
+</div>    
+    
+</body>
+</html>

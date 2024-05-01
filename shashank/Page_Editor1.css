@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background: url("Images/Pageeditback.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+.card-header{ 
+    padding: 60px 40px;
+    position: relative;
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px solid #00002a;
+    backdrop-filter: blur(20px);
+    border: 1px solid white; 
+    border-radius: 8px;
+}
+
+.profile-card{ /*styling the profile card*/
+    width: 400px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    padding: 2rem 1rem;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;    
+}
+
+.pic{ /*styling the image*/
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(130deg, #110ed7,#d21313);
+    margin: auto;
+    border-radius: 50%;
+    background-size: 150% 150%;
+    animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient{ /*changing style of animation*/
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+}
+
+.pic img{
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.name{
+    color: #f2f2f2;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+
+}
+
+.task{
+    font-size: 20px;
+    color:#ffffff ;
+}
+
+.ds{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.ds a{
+    color:#959895 ;
+    width: 56px;
+    font-size: 22px;
+    transition: .3s linear;
+}
+
+.ds a:hover{
+    color: #1076c9;
+}
+
+.task-style{ /*styling the task box*/
+    position: relative;
+    display: inline-block;
+    color: rgb(2, 6, 252);
+    text-transform: uppercase;
+    border-radius: 6px;
+    margin-top: 7px;
+    margin-bottom: -9px;
+    transition: .3s linear;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.task-style:hover{ /*hovering effect for the task box*/
+    color: #255784;
+    box-shadow: 0 0 10px rgb(85, 7, 241),0 0 20px rgb(85, 7, 241),0 0 30px rgb(159, 152, 172);
+    transition-delay: 1s;
+}
+
+a span{
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1){/*number of the child of the parent*/
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,rgb(198, 195, 204));
+}
+
+a:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+
+
+a:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,rgb(88, 84, 97));
+}
+a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,rgb(99, 96, 106));
+}
+
+
+a:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,rgb(44, 43, 45));
+}
+
+a:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+p{
+    color: aliceblue;
+}

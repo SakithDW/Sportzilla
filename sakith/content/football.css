@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+
+.viewbox{
+    width: 100%;
+    height: 1300px;
+    margin-top: 80px;
+    background-image: linear-gradient(rgba(0, 18, 51, 0.7),rgba(0, 0, 0, 0.9)) ,url(images/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    
+    color: white;
+}
+
+.h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 80px;
+    padding-top: 20px;
+    text-align: center;
+    letter-spacing: 15px;
+}
+
+.para1{
+    margin-right: 40px;
+    margin-left: 50px;
+    margin-top: 40px;
+    text-align: left;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.fifa{
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.fifa p{
+    margin-top: 0px;
+}
+
+.lineups {
+    width: 83%;
+    margin-top: 70px;
+    margin-left: 70px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.lineups p {
+    margin-top: 0px;
+}
+

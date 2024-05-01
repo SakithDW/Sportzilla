@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root{
+    --fontsize: 25px 
+}
+
+.navbar .nav-links{
+    right: 10px;
+}
+
+.settings button{
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    margin-left: 70px;
+    
+
+}
+
+
+.material-symbols-outlined{
+    color: white;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.material-symbols-outlined:hover{
+    transform: rotate(90deg);
+}
+
+.dropbox{
+    /* border: 2px solid black; */
+    /* border-radius: 15px; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 150px;
+    height: 190px;
+    right: 45px;
+    top: -110px;
+    background-color: white;
+    transition: 0.5s;
+    z-index: 9;
+    
+
+
+}
+
+#expandup{
+    margin-top: 0px;
+    color: grey;
+    transform: rotate(0);
+}
+
+.palletbox{
+    /* border: 2px solid black; */
+    width: 100px;
+    height: 110px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pallet{
+    border: 2px solid #adb5bd;
+    outline: 2px solid #adb5bd;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    cursor: pointer;
+    /* margin-top: 100px; */
+    
+
+}
+
+.pallet:hover{
+    border: 2px solid #2ec4b6;
+    outline: 2px solid #2ec4b6;
+}
+
+#pallet2{
+    background-color: black;
+}
+
+#pallet3{
+    background-color: #001233;
+}
+
+#pallet4{
+    background-image: linear-gradient(#ffd6ff,#e7c6ff,#c8b6ff,#b8c0ff,#bbd0ff);
+}
+
+
+.textsizebox{
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.textsizebox span{
+    color: black;
+    
+}
+
+#text1{
+    font-size: 25px;
+}
+#text2 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#text3 {
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.gallery {
+    /* border: 2px solid black; */
+    height: 4500px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-color: white;
+
+}
+
+.gallery .panel {
+    /* border: 2px solid black; */
+    height: 2000px;
+    width: 100%;
+    display: flex;margin-top: 20px;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.foot{
+    /* border: 1px solid rgb(255, 0, 0); */
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.6)), url(images/sp2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-style: oblique;
+    font-size: 200px;
+    pointer-events: none;
+    
+}
+.basket {
+    /* border: 1px solid rgb(255, 0, 0); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/sp3.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-style: oblique;
+    font-size: 200px;
+    pointer-events: none;
+
+}
+
+.cricket {
+    /* border: 1px solid rgb(255, 0, 0); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/sp4.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-style: oblique;
+    font-size: 200px;
+    pointer-events: none;
+
+}
+
+.hockey {
+    /* border: 1px solid rgb(255, 0, 0); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/sp5.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-style: oblique;
+    font-size: 200px;
+    pointer-events: none;
+
+}
+.imgbox{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+
+}
+.imgbox .images{
+    position: relative;
+    width: 480px;
+    height: 320px;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: 0.5s; 
+    overflow: hidden;
+    background-size: cover;
+    word-wrap: break-word;
+    
+  
+}
+.imgbox .images:hover::after{
+    content: "";
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    background-color: rgba(0, 0, 0,0.5);
+    width: 100%;
+    height: 100%;
+    opacity: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;  
+    text-align: center;
+    padding-top: 220px;
+    font-size: var(--fontsize);
+    color: white;
+    font-family: 'Source Code Pro';
+    
+}
+
+
+#img1:hover::after{
+    word-wrap: break-word;
+    content: "Lional Messi celebrating his equalizer goal against Real Madrid in 2018 @camp nou." ;
+}
+#img2:hover::after {
+    content: "Fifa world cup winning argentine team in 2022";
+}
+#img3:hover::after {
+    content: "Young Ronaldo in Manchester United FC";
+}
+#img4:hover::after {
+    content: "Young Neymar in FC Barcelona";
+}
+#img5:hover::after {
+    content: "Pele with three world cups which he won.";
+}
+#img6:hover::after {
+    content: "Zidane leaving pitch after getting a red card in 2006 wc final against Italy.";
+}
+
+#img7:hover::after {
+    word-wrap: break-word;
+    content: "A dunk by Shaquille o'neil.";
+}
+#img8:hover::after {
+    word-wrap: break-word;
+    content: "Michael Jordan and Late Kobe Bryant.";
+}
+#img9:hover::after {
+    word-wrap: break-word;
+    content: "Yao Ming with Shaqille o'neil";
+}
+#img10:hover::after {
+    word-wrap: break-word;
+    content: "Chicago Bulls and Portland Trail Blazers";
+}
+#img11:hover::after {
+    word-wrap: break-word;
+    content: "LeBron James in LA Lakers kit";
+}
+#img12:hover::after {
+    word-wrap: break-word;
+    content: "Olympic Gold Medal winng USA basketball team";
+}
+
+#img13:hover::after {
+    word-wrap: break-word;
+    content: "2014 T20 world cup winning Sri Lanka Cricket team.";
+}
+#img14:hover::after {
+    word-wrap: break-word;
+    content: "Kumar Sangakkara.";
+}
+#img15:hover::after {
+    word-wrap: break-word;
+    content: "Lasith Malinga";
+}
+#img16:hover::after {
+    word-wrap: break-word;
+    content: "Sachin Tendulkar";
+}
+#img17:hover::after {
+    word-wrap: break-word;
+    content: "Young Australian legendary Spinner,late Shane Warne";
+}
+#img18:hover::after {
+    word-wrap: break-word;
+    content: "Chris Gayle";
+}
+
+#img19:hover::after {
+    word-wrap: break-word;
+    content: "An olympic hockey pitch.";
+}
+#img20:hover::after {
+    word-wrap: break-word;
+    content: "Gold medal winning Dutch womens hockey team in Tokyo Olympics in 2020";
+}
+#img21:hover::after {
+    word-wrap: break-word;
+    content: "Argentine hockey player Luciana Aymar in 1977.";
+}
+#img22:hover::after {
+    word-wrap: break-word;
+    content: "Tobias Huake";
+}
+#img23:hover::after {
+    word-wrap: break-word;
+    content: "Great Indian talent,Mandeep singh";
+}
+#img24:hover::after {
+    word-wrap: break-word;
+    content: "Former Pakistani Hockey player Shabaz Ahmed";
+}

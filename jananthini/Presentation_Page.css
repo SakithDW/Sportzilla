@@ -1,0 +1,114 @@
+@keyframes myscroll{
+	0%{
+		width:1%;
+		height:1%;
+		opacity: 100%;
+		z-index: 100;
+	}
+	50%{
+		width:100%;
+		height:100%;
+		opacity:100%;
+	}
+	100%{
+		opacity:0%;
+		visibility: hidden;
+	}
+}
+
+
+@keyframes scroll1 {
+	0% {
+			
+			opacity: 100%;
+			z-index: 99;
+		}
+	
+		50% {
+			
+			opacity: 100%;
+		}
+	
+		100% {
+			opacity: 0%;
+			visibility: hidden;
+			
+		}
+}
+  
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .load {
+      padding: 0;
+      margin: 0;
+	
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-attachment: fixed;
+      animation: myscroll 4s;
+	  color: white;
+	font-family: 'Changa', sans-serif;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	z-index: 0;
+	opacity: 0%;
+	
+	
+  }
+
+  .loadbg{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 18, 51, 0.7), rgba(0, 0, 0, 0.9)), url(/shashank/Images/presentation_back.jpg);
+	z-index: 0;
+	animation: scroll1 4s;
+	background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		opacity: 0;
+	
+  }
+  
+table{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	position:center;
+}
+
+table, th, td{
+	border:2px rgb(254, 253, 253);
+	border-collapse:collapse;
+}
+.logo{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+}
+
+
+td{
+	padding:5px;
+	text-align:center;
+	color:white;
+	font-size:20px;
+}
+
+
+
+h1{
+	margin-top: -30px;
+	text-align:center;
+	
+}
+h2{
+	text-align:center;
+	
+}

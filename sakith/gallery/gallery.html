@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,700;1,700&family=Poppins:ital,wght@0,700;0,800;1,400;1,600;1,700;1,800&family=Source+Code+Pro:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="../exstyle.css">
+    <link rel="stylesheet" href="gallery.css">
+    
+    <title>Gallery</title>
+</head>
+<body>
+    <!--Added the navigation bar here-->
+    <div class="navbar">
+        <div class="logo">SPORTZILLA</div>
+        <div class="nav-links">
+            <a href="/jananthini/index.html">HOME</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="/shashank/Buy_Products.html">SHOP</a>
+            <a href="/wameesha/20220193(w1953169)/20220193(w1953169)/Coursework final/Task/quiz.html">QUIZ</a>
+            <a href="/sakith/sitemap/sitemap.html">SITE MAP</a>
+            <a href="/wameesha/20220193(w1953169)/20220193(w1953169)/Coursework final/Task/memeberdetails.html">ABOUT US</a>
+            <a href="/jananthini/feedback/feedback.html">FEEDBACK</a>
+            <div class="settings">
+                <button>
+                    <span class="material-symbols-outlined" onclick="dropdown()">settings</span>
+                </button>
+            </div>    
+        </div>       
+    </div>
+    <div class="dropbox" id="box">
+        <div class="palletbox">
+        <div class="pallet" id="pallet1" onclick="white()"></div><!--Backgroung colour change-->
+        <div class="pallet" id="pallet2" onclick="black()"></div>
+        <div class="pallet" id="pallet3" onclick="blue()"></div>
+        <div class="pallet" id="pallet4" onclick="randomcol()"></div>
+    </div>
+    <div class="textsizebox">
+        <span class="material-symbols-outlined" id="text1" onclick="font(25)"><!--change font size-->
+            text_fields
+        </span>
+        <span class="material-symbols-outlined" id="text2" onclick="font(20)">
+            text_fields
+        </span>
+        <span class="material-symbols-outlined" id="text3" onclick="font(15)">
+            text_fields
+        </span>
+    </div>
+        <span class="material-symbols-outlined" id="expandup" onclick="goup()">
+        expand_less
+    </span></div>
+    <section class="gallery" id="backg">
+        <div class="panel">
+            <div class="foot">FOOTBALL</div>
+            <div class="imgbox">
+            <div class="images" id="img1"><img src="images/gal1.jpg" style="width:100%" alt=""></div>
+            <div class="images" id="img2"><img src="images/gal2.jpg" style="width:100%" alt=""></div>
+            <div class="images" id="img3"><img src="images/gal3.jpg" style="width:100%" alt=""></div>
+            <div class="images" id="img4"><img src="images/gal4.jpg" style="width:100%" alt=""></div>
+            <div class="images" id="img5"><img src="images/gal5.webp" style="width:100%" alt=""></div>
+            <div class="images" id="img6"><img src="images/gal6.webp" style="width:110%" alt=""></div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="basket">BASKETBALL</div>
+            <div class="imgbox">
+                <div class="images" id="img7"><img src="images/gal7.jpg" style="width:110%" alt=""></div>
+                <div class="images" id="img8"><img src="images/gal8.jpg" style="width:110%" alt=""></div>
+                <div class="images" id="img9"><img src="images/gal9.webp" style="width:112%" alt=""></div>
+                <div class="images" id="img10"><img src="images/gal10.jpg" style="width:100%" alt=""></div>
+                <div class="images" id="img11"><img src="images/gal11.webp" style="width:120%" alt=""></div>
+                <div class="images" id="img12"><img src="images/gal12.webp" style="width:130%" alt=""></div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="cricket">CRICKET</div>
+            <div class="imgbox">
+                <div class="images" id="img13"><img src="images/gal13.jpg" style="width:130%" alt=""></div>
+                <div class="images" id="img14"><img src="images/gal14.jpg" style="width:120%" alt=""></div>
+                <div class="images" id="img15"><img src="images/gal15.jpg" style="width:120%" alt=""></div>
+                <div class="images" id="img16"><img src="images/gal16.jpg" style="width:120%" alt=""></div>
+                <div class="images" id="img17"><img src="images/gal17.jpg" style="width:100%" alt=""></div>
+                <div class="images" id="img18"><img src="images/gal18.jpg" style="width:110%" alt=""></div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="hockey">HOCKEY</div>
+            <div class="imgbox">
+                <div class="images" id="img19"><img src="images/gal19.jpg" style="width:100%" alt=""></div>
+                <div class="images" id="img20"><img src="images/gal20.jpg" style="width:120%" alt=""></div>
+                <div class="images" id="img21"><img src="images/gal21.jpg" style="width:120%" alt=""></div>
+                <div class="images" id="img22"><img src="images/gal22.jpg" style="width:128%" alt=""></div>
+                <div class="images" id="img23"><img src="images/gal23.jpg" style="width:100%" alt=""></div>
+                <div class="images" id="img24"><img src="images/gal24.jpg" style="width:110%" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+
+        let box = document.getElementById("box");
+        let bg = document.getElementById("backg");
+        let r = document.querySelector(':root');
+        
+        /*Dropdown function for dropdown box*/
+        function dropdown() {
+                box.style.top = "80px";
+            
+        }
+        /*function to dropdown box scroll up*/
+        function goup() {
+            box.style.top = "-110px";
+        }
+        //functions to change the colour of the background
+        function white() {
+            bg.style.backgroundColor = "white";
+        }
+
+        function black() {
+                bg.style.backgroundColor = "black";
+                
+            }
+
+        function blue() {
+                bg.style.backgroundColor = "#001233";
+            }
+
+        function randomcol() {
+                bg.style.backgroundColor ='rgb(' + Math.round(Math.random() * 255) +',' + Math.round(Math.random() * 255) +',' + Math.round(Math.random() * 255) + ')';
+            }
+
+        function font(size) {
+            switch (size) {
+                case 25:
+                    r.style.setProperty('--fontsize', '25px');
+                    break;
+                case 20:
+                    r.style.setProperty('--fontsize', '20px');
+                    break;
+                case 15:
+                    r.style.setProperty('--fontsize', '15px');
+                    break;    
+            
+                default:
+                    break;
+            }
+        }
+
+    </script>
+    <!--footer part-->
+    <footer>
+        <div class="lg">SPORTZILLA</div>
+        <div class="social">
+            <img src="../images/youtube.png" alt="" style="width: 50px;height: 50px" class="ico">
+            <img src="../images/facebook.png" alt="" style="width: 50px;height: 50px" class="ico">
+            <img src="../images/twitter.png" alt="" style="width: 50px;height: 50px" class="ico">
+            <img src="../images/instagram.png" alt="" style="width: 50px;height: 50px" class="ico">
+            <img src="../images/whatsapp.png" alt="" style="width: 50px;height: 50px" class="ico">
+        </div>
+        <div class="copy">Copyright © SPORTZILLA</div>
+        <div class="editorlink">Designed by <a href="/sakith/sakith.html">Sakith</a></div>
+    </footer>
+
+</body>
+</html>
